@@ -2,9 +2,11 @@
 
 ## Take into account
 
-Configure your `,ecv` file with the parameters needed
+Configure your `.env` file with the parameters needed
 
 ## Run
-```
+
+``` bash
 Docker compose up -d
 ```
+
