@@ -20,11 +20,11 @@ def send_email(rate):
         subject = "USD/ARS Exchange Rate"
         body = f"""
         Daily Exchange Rate Update
-        
+
         1 USD = {rate} ARS
-        
+
         Time: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
-        
+
         ---
         Sent by your friendly Python bot 🤖
         """
@@ -72,9 +72,6 @@ def email_sender():
 
 
 if __name__ == "__main__":
-    email_sender()
-
-    # Send email everyday at 12:00 PM
     schedule.every().day.at("12:00").do(email_sender)
 
     try:
